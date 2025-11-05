@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Web Application Firewall (WAF)</title>
+    </head>
+
+    <body>
+        <div id="contenedor">
+            <header>
+                <h1>Web Application Firewall (WAF)</h1>
+            </header>
+
+            <nav id="barra">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="ataqueddos.html">Ataque DDoS</a></li>
+                    <li><a href="botnetddos.html">Botnet de DDos</a></li>
+                    <li><a href="ataquesddoshabituables.html">Ataques DDoS Habituales</a></li>
+                    <li><a href="tiposimplementacion.html">Tipos de Implementación</a></li>
+                    <li><a href="reseña.html">Reseña del Autor</a></li>
+                </ul>
+            </nav>
+
+            <main id="body">
+                <div class="titulo-primero">
+                    <h2>¿Qué es una Botnet DDos?</h2>
+                </div>
+
+                <div class="imagen-primera">
+                    <img src="imagenes/botnet.png">
+                </div>
+
+                <div class="contenido-texto">
+                    <p>Una botnet se refiere a un grupo de computadoras que han sido infectadas por malware y han quedado bajo el control de un actor malicioso. El término botnet es una palabra compuesta de robot y red, y cada dispositivo infectado se llama bot . Las botnets pueden diseñarse para realizar tareas ilegales o maliciosas, como enviar spam , robar datos, ransomware , hacer clic fraudulentamente en anuncios o realizar ataques de denegación de servicio distribuido (DDoS).</p>
+
+                    <br>
+
+                    <p>Si bien algunos programas maliciosos , como el ransomware, tendrán un impacto directo en el propietario del dispositivo, el malware de botnets DDoS puede tener diferentes niveles de visibilidad; algunos programas maliciosos están diseñados para tomar el control total de un dispositivo, mientras que otros se ejecutan silenciosamente como un proceso en segundo plano, esperando en silencio instrucciones del atacante o "director de botnets".</p>
+
+                    <br>
+
+                    <div class="imagen-segunda">
+                        <img src="imagenes/botnet2.png">
+                    </div>
+
+                    <p>Las botnets de autopropagación reclutan bots adicionales a través de diversos canales. Las vías de infección incluyen la explotación de vulnerabilidades de sitios web, malware de troyanos y el descifrado de autenticaciones débiles para obtener acceso remoto. Una vez que se ha obtenido acceso, todos estos métodos de infección dan como resultado la instalación de malware en el dispositivo objetivo, lo que permite el control remoto por parte del operador de la botnet. Una vez que un dispositivo está infectado, puede intentar autopropagar el malware de la botnet reclutando otros dispositivos de hardware en la red circundante</p>
+
+                    <br>
+
+                    <div class="titulo-segundo">
+                        <h2>¿Por qué se crean las botnets?</h2>
+                    </div>
+
+                    <p>Las razones para usar una botnet van desde el activismo hasta la interrupción patrocinada por el estado, y muchos ataques se llevan a cabo simplemente con fines de lucro. Contratar servicios de botnets en línea es relativamente económico, especialmente en relación con la cantidad de daño que pueden causar. La barrera para crear una botnet también es lo suficientemente baja como para convertirla en un negocio lucrativo para algunos desarrolladores de software, especialmente en ubicaciones geográficas donde la regulación y la aplicación de la ley son limitadas. Esta combinación ha llevado a una proliferación de servicios en línea que ofrecen ataques por encargo.</p>
+
+                    <br>
+
+                    <div class="titulo-tercero">
+                        <h2>¿Cómo se controla una botnet?</h2>
+                    </div>
+
+                    <p>Una característica fundamental de una botnet es la capacidad de recibir instrucciones actualizadas del operador. La capacidad de comunicarse con cada bot de la red permite al atacante alternar vectores de ataque, cambiar la dirección IP objetivo , terminar un ataque y realizar otras acciones personalizadas. Los diseños de botnets varían, pero las estructuras de control se pueden dividir en dos categorías generales:</p>
+
+                    <br>
+
+                    <div class="titulo-cuarto">
+                        <h3>El modelo de botnet cliente - servidor</h3>
+                    </div>
+
+                    <p>El modelo cliente/servidor imita el flujo de trabajo tradicional de una estación de trabajo remota, donde cada máquina individual se conecta a un servidor centralizado (o a un pequeño número de servidores centralizados) para acceder a la información. En este modelo, cada bot se conecta a un recurso de centro de comando y control (CnC), como un dominio web o un canal IRC, para recibir instruccionesAl usar estos repositorios centralizados para proporcionar nuevos comandos a la botnet, un atacante solo necesita modificar el material fuente que cada botnet consume de un centro de comando para actualizar las instrucciones a las máquinas infectadas. El servidor centralizado que controla la botnet puede ser un dispositivo propiedad del atacante y operado por él, o puede ser un dispositivo infectado.</p>
+
+                    <p>Se han observado varias topologías populares de botnets centralizadas, entre ellas:
+                        <ul>
+                            <li>Topología de Red en Estrella</li>
+                            <li>Topología de Red de Múltiples Servidores</li>
+                            <li>Topología de Red Jerárquica</li>
+                        </ul>
+                    </p>
+
+                    <div class="imagen-tercera">
+                        <img src="imagenes/botnet3.png">
+                    </div>
+
+                    <br>
+
+                    <div class="titulo-quinto">
+                        <h3>El modelo de botnet peer-to-peer</h3>
+                    </div>
+
+                    <p>Para eludir las vulnerabilidades del modelo cliente/servidor, las botnets se han diseñado más recientemente utilizando componentes de intercambio de archivos peer-to-peer descentralizado. Integrar la estructura de control dentro de la botnet elimina el único punto de falla presente en una botnet con un servidor centralizado, lo que dificulta los esfuerzos de mitigación. Los bots P2P pueden ser tanto clientes como centros de comando, trabajando en conjunto con sus nodos vecinos para propagar datos</p>
+
+                    <p>Las botnets peer-to-peer mantienen una lista de computadoras de confianza con las que pueden enviar y recibir comunicaciones y actualizar su malware. Al limitar la cantidad de otras máquinas a las que se conecta el bot, cada bot solo está expuesto a dispositivos adyacentes, lo que dificulta su rastreo y mitigación. La falta de un servidor de comando centralizado hace que una botnet peer-to-peer sea más vulnerable al control por parte de alguien que no sea el creador de la botnet. Para protegerse contra la pérdida de control, las botnets descentralizadas suelen estar cifradas para que el acceso sea limitado.</p>
+
+                    <div class="imagen-cuarta">
+                        <img src="imagenes/botnet4.png">
+                    </div>
+                </div>
+            </main>
+
+            <br>
+
+            <footer id="footer">
+                <p>© 2025 Web Application Firewall (WAF). Todos los derechos reservados.</p>
+            </footer>
+        </div>
+    </body>
+</html>
