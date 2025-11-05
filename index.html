@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Web Application Firewall (WAF)</title>
+    </head>
+    <body>
+        <div id="contenedor">
+            <header>
+                <h1>Web Application Firewall (WAF)</h1>
+            </header>
+
+            <nav id="barra">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="ataqueddos.html">Ataque DDoS</a></li>
+                    <li><a href="botnetddos.html">Botnet de DDos</a></li>
+                    <li><a href="ataquesddoshabituables.html">Ataques DDoS Habituales</a></li>
+                    <li><a href="tiposimplementacion.html">Tipos de Implementación</a></li>
+                    <li><a href="reseña.html">Reseña del Autor</a></li>
+                </ul>
+            </nav>
+
+            <main id="body">
+                <div class="contenido">
+                    <h2 class="titulo-primero">
+                        ¿Qué es Web Application Firewall (WAF)?
+                    </h2>
+
+                    <div class="imagen-primero">
+                        <img src="imagenes/waf.png">
+                    </div>
+
+                    <br>
+
+                    <div class="contenido-texto">
+                        <div class="definicion">
+                            <p>Una Web Application Firewall (WAF) es una tecnología de seguridad que filtra y supervisa el tráfico HTTP o HTTPS entre una aplicación web y el resto de Internet para bloquear ataques dirigidos a la capa de aplicación (capa 7 del modelo OSI), como inyección  de consultas SQL, Cross‑Site Scripting (XSS), inclusión de archivos y cross-site request forgery.</p>
+
+                            <br>
+
+                            <p>Al desplegar un WAF en una aplicación web, se coloca un escudo entre la aplicación web e Internet. Si bien un servidor proxy protege la identidad del equipo del cliente por medio de un intermediario, un WAF es un tipo de proxy inverso que protege al servidor de los riesgos al hacer que los clientes atraviesen el WAF antes de llegar al servidor.</p>
+
+                            <br>
+
+                            <p> El WAF opera por medio de un conjunto de reglas, normalmente denominadas directivas. Estas directivas tienen el fin de proteger contra vulnerabilidades en la aplicación al filtrar el tráfico malicioso. El valor de un WAF procede, en parte, de la velocidad y facilidad con que se pueden aplicar modificaciones en las directivas que permiten una respuesta más rápida ante diversos vectores de ataque; durante un ataque DDoS, se puede implementar rápidamente la limitación de velocidad modificando las directivas del WAF.</p>
+                        </div>
+
+                        <div class="imagen-segundo">
+                            <img src="imagenes/internet.jpeg">
+                        </div>
+
+                        <div class="funcionamiento">
+                            <div class="titulo-segundo">
+                                <h2>¿Cómo es el Funcionamiento del WAF?</h2>
+                            </div>
+
+                            <ul>
+                                <li>Analiza las peticiones HTTP/HTTPS entrantes y salientes buscando patrones maliciosos.</li>
+                                <li>Analiza firmas conocidas y anomalías en el comportamiento del tráfico.</li>
+                                <li>Aplica reglas predefinidas y reglas personalizadas basadas en la lógica de la aplicación para permitir bloquear o desafiar ciertas solicitudes.</li>
+                                <li>Usan modelos de comportamiento o aprendizaje automático para detectar tráfico anómalo y reducir falsos positivos.</li>
+                            </ul>
+                        </div>
+
+                        <div class="imagen-tercero">
+                            <img src="imagenes/servidor.jpeg">
+                        </div>
+
+                        <div class="proposito-principal">
+                            <div class="titulo-tercero">
+                                <h2>¿Cúal es el Propósito Principal del WAF?</h2>
+                            </div>
+
+                            <p>De entre los propositos principales de el Web Application Firewall (WAF) podemos mencionar:</p>
+
+                            <ul>
+                                <li>Proteger las Aplicaciones Web de Ataque Malintensionados</li>
+                                <li>Prevenir Explotación de Vulnerabilidades</li>
+                                <li>Mantener disponibilidad y Continuidad</li>
+                                <li>Reducir Riegos Operativos</li>
+                            </ul>
+                        </div>
+
+                        <div class="imagen-cuarto">
+                            <img src="imagenes/servidor2.jpeg">
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <footer id="footer">
+                    <p>© 2025 Web Application Firewall (WAF). Todos los derechos reservados.</p>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>
